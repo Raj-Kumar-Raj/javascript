@@ -1,0 +1,7 @@
+//good string is that wich is start with "a" and has a  length less  than 3 
+let name =prompt("enter the string");
+if(name[0]=="a" && name.length<=3){
+ console.log("good STring");
+}else{
+    console.log("Bad String");
+}
