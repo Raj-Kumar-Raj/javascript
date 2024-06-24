@@ -1,0 +1,10 @@
+// link this with practice.html 
+// get usrr to i/p a no. using the promot , check wheater te number is multile of 5 or not 
+
+let num = prompt("enter the no.");
+if(num%5==0){
+    console.log("num is multile of 5 ");
+}
+else{
+    console.log("num is not multiple of 5");
+}
