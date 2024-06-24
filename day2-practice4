@@ -1,0 +1,17 @@
+// greater among three 
+
+let a=prompt("enter te first number");
+let b = prompt("enter the second number");
+let c = prompt("enter the third number");
+
+if(a<b && c<b){
+   console.log("second num is greater ");
+}
+
+else if (b<a && c<a){
+    console.log("first num is greater");
+}
+
+else{
+    console.log("last no. is grater among three");
+}
