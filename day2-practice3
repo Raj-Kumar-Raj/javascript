@@ -1,0 +1,5 @@
+//take the user name and age and print the following 
+let name = prompt("enter your name");
+let age = prompt("enter the age ");
+
+console.log("my name is ", name,"and i am " ,age, "year old" );
