@@ -1,0 +1,12 @@
+// crreate a traffic light system that show what to do based on colour
+let colour = prompt("What is the color of your traffic light?");
+
+if (colour === "red") {
+    console.log("Stop");
+} else if (colour === "yellow") {
+    console.log("Go slow");
+} else if (colour === "green") {
+    console.log("Go");
+} else {
+    console.log("Invalid color or action");
+}
