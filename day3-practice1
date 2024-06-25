@@ -1,0 +1,2 @@
+let msg =prompt("enter the string to trim and convert in the uppercase ");
+console.log( msg.trim().toUpperCase());
