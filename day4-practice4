@@ -1,0 +1,17 @@
+let num = 23456;
+let numDigits = num.toString().length;
+
+console.log(numDigits);
+  
+
+
+
+// let num = 23456;
+// let numDigits = 0;
+
+// while (num > 0) {
+//     num = Math.floor(num / 10);
+//     numDigits++;
+// }
+
+// console.log(numDigits);
