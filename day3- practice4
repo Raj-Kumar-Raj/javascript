@@ -1,0 +1,15 @@
+let str = [];
+for(let i = 0; i < 7; i++){
+    str[i] = prompt("Enter the element of your collection:");
+}
+
+console.log("Inputted array is =", str);
+
+let item = prompt("Enter the item to find its index after reversing the array");
+
+console.log("Array before reversing:", str); // Added debug statement
+str.reverse();
+console.log("Array after reversing:", str); // Ensure this is the reversed array
+
+let index = str.indexOf(item);
+console.log(`The index of the required item '${item}' after reversing the array is =`, index);
