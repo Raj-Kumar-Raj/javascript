@@ -1,0 +1,4 @@
+// using the splice do the following 
+let state =["january", "july", "march", "august"];
+console.log(state.splice(0,2,"july", "june"));
+console.log(state);
