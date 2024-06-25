@@ -1,0 +1,17 @@
+//  program to check wheater the element exist or not in the given array
+let str =["raj", "kumar", "yash"];
+let target = prompt("enter the target elemnt");
+let id=0;
+for(let i =0; i<str.length; i++){
+    if(str[i]==target){
+        console.log("yes");
+        id=1;
+        break;
+    }
+    
+}
+
+if(id==0){
+    console.log("element not found");
+}
+
