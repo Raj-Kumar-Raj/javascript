@@ -1,0 +1,11 @@
+const a = "rang de basanti";
+let ans  =prompt(" guess my fav movie");
+while((a != ans) && (ans != "quit")){
+    ans = prompt("wrong guess,plz guess another name");
+}
+
+if(ans == a ){
+    console.log("you guess correct");
+}else{
+    console.log("you quite");
+}
