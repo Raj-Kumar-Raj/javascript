@@ -1,0 +1,7 @@
+// using the pop , push , shift , unshift do the following 
+let state =["january", "july", "march", "august"];
+state.shift();
+state.shift();
+state.unshift("june");
+state.unshift("july");
+console.log(state);
