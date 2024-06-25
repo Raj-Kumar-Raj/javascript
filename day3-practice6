@@ -1,0 +1,12 @@
+// program to get first n  element of the array 
+console.log("enter the element of the array");
+let str=[];
+let n = prompt("enter the size of your array");
+for(let i =0; i <n ; i++){
+    str[i]=prompt("enter elements of the array one by one ");
+}
+
+let m = prompt("enter the no of element to be printed on screen");
+for(let i =0; i< m ; i++){
+    console.log(str[i]);
+}
