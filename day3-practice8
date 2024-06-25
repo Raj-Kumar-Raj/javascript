@@ -1,0 +1,10 @@
+/// check element at given index is in  lowercase or not
+let str = prompt("enter the string");
+let i = prompt("enter the index of the char to check the condititon");
+if(str[i]==str[i].toLowerCase()){
+    console.log("condition good");
+}
+
+else{
+    console.log("condition not good");
+}
