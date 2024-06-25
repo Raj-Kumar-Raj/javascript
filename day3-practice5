@@ -1,0 +1,3 @@
+// tactoe status 
+let tic=[["x","null","o"],["o","x","null"],["o","null","x"]];
+console.log(tic);
