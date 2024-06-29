@@ -1,0 +1,45 @@
+let arr=[2,3,4,5];
+let sum =0;
+let num = ()=>{
+    for(let i =0; i<arr.length; i++){
+        arr[i]=arr[i]*arr[i];
+    }
+
+    for(let i =0; i<arr.length; i++){
+        sum +=arr[i];
+    }
+
+    console.log(sum);
+}
+
+num();
+// create a new array whose elemnt is five more than original elemnt array
+let arr1=[2,3,4,5];
+let five =arr1.map(function(el){
+    return el+5;
+})
+console.log(five);
+//new array whose element is in the uppercase of the words present in the original array 
+let str =["raj"];
+let uppercase =str.map(function(el){
+    return el.toUpperCase();
+})
+console.log(uppercase);
+
+// merging the object 
+const obj1 ={
+    name:"raj"
+};
+
+const obj2={
+    middle:"kumar"
+};
+
+function merge(object1,object2){
+    return {...object1,...object2}
+};
+
+let res = merge(obj1,obj2);
+console.log("merged object =",res);
+
+
