@@ -1,0 +1,21 @@
+// average of the three number usinf the function 
+function avg(){
+    let num1 =3 ;
+    let num2 = 4;
+    let num3 = 5;
+    let average = (num1+num2+num3)/3;
+    console.log(average);
+}
+
+// wap using  the function to multipply tale of the number 
+console.log("...................................................................");
+
+function mul(){
+    let num = prompt("enter the num");
+    for(let i =1; i<=10; i++){
+        console.log(num*i);
+    }
+}
+
+avg();
+mul();
