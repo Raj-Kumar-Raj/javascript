@@ -1,0 +1,13 @@
+//twitter post
+let twitter ={
+    username: "raj kumar raj",
+    context: "this is my personal acount",
+    likes: 25,
+    repost: 50,
+    tags:89,
+    1:25
+};
+
+console.log(twitter.username);
+console.log(twitter.tags);
+console.log(twitter[1]);  // remember this always for numbe ryou have to use the square bracket 
