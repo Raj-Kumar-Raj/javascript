@@ -1,0 +1,85 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+    let playButton = document.getElementById('startGame');
+    let submitButton = document.getElementById('submitGuess');
+    let quitButton = document.getElementById('quitGame');
+    let guessInput = document.getElementById('guessInput');
+    let feedback = document.getElementById('feedback');
+    let scoreDisplay = document.getElementById('score');
+    let gameArea = document.getElementById('gameArea');
+
+    let num;
+    let chance;
+    let score;
+
+    playButton.addEventListener('click', () => {
+        startGame();
+    });
+
+    submitButton.addEventListener('click', () => {
+        if (chance > 0) {
+            submitGuess();
+        }
+    });
+
+    quitButton.addEventListener('click', () => {
+        quitGame();
+    });
+
+    function startGame() {
+        num = Math.floor(Math.random() * 100) + 1;
+        chance = 15;
+        score = 0;
+        feedback.textContent = '';
+        scoreDisplay.textContent = '';
+        guessInput.value = '';
+        gameArea.classList.remove('hidden');
+        playButton.classList.add('hidden');
+    }
+
+    function submitGuess() {
+        let guess = guessInput.value;
+
+        if (guess.toLowerCase() == 'quit') {
+            quitGame();
+            return;
+        }
+
+        guess = parseInt(guess);
+
+        if (isNaN(guess)) {
+            feedback.textContent = 'Invalid input. Please enter a valid number.';
+            return;
+        }
+
+        if (guess < num) {
+            feedback.textContent = 'You guessed too low.';
+            chance--;
+        } else if (guess > num) {
+            feedback.textContent = 'You guessed too high.';
+            chance--;
+        } else {
+            feedback.textContent = 'Congrats, you guessed correctly!';
+            score++;
+            endGame();
+            return;
+        }
+
+        if (chance > 0) {
+            feedback.textContent += ` You have ${chance} chances left. Try again.`;
+        } else {
+            feedback.textContent = `You used all your chances. The correct number was ${num}.`;
+            endGame();
+        }
+    }
+
+    function quitGame() {
+        feedback.textContent = 'You quit. Thank you for playing, your score is = ' + score;
+        endGame();
+    }
+
+    function endGame() {
+        scoreDisplay.textContent = 'Your score is ' + score;
+        playButton.classList.remove('hidden');
+        gameArea.classList.add('hidden');
+    }
+});
