@@ -1,0 +1,13 @@
+// funcion to write a poem 
+function poem(){
+    console.log("poem");
+}
+
+// function diaplay the value of the dice roll 
+function dice(){
+    let num = Math.floor(Math.random()*6)+1;
+    console.log(num);
+}
+
+poem();
+dice();
