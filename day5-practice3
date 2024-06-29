@@ -1,0 +1,9 @@
+// array of 0bjects 
+const info=[{
+    name:"rj"
+},
+{
+name:"dj"
+},{
+    name:"mj"
+}]
