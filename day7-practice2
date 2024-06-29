@@ -1,0 +1,45 @@
+// arrow function that return the sq. of a no. 'n'
+let n = prompt("enter the number to find its square");
+let sq = (n) =>{
+    console.log(n*n);
+}
+
+// hello world at an interval of 5 sec 
+function hello () {
+    for(let i =0; i<6; i++){
+        setTimeout(()=>{
+            console.log("Hello world");
+        },5000);
+    }
+};
+
+hello();
+
+// avg array function
+
+let avg= ()=>{
+    let arr = [];
+    for(let i =0; i<10; i++){
+        arr=prompt("enter the elements of array");
+    }
+    let sum =0;
+    for(let i =0; i<10; i++){
+        sum += arr[i];
+    }
+
+    let res = sum/arr.length;
+    console.log(res);
+}
+
+// even odd fun
+
+let check =()=>{
+    let n = prompt("enter the number to check ");
+    if(n%2==0){
+        console.log("number is even");
+    }
+
+    else{
+        console.log("number is odd");
+    }
+}
