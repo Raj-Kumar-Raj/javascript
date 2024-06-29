@@ -1,0 +1,49 @@
+//unique the string charcter 
+function unique(){
+    let str = "raj";
+    for (let i =0; i<str.length; i++){
+        let s = str.charAt(i);
+        console.log(s);
+    }
+}
+
+unique();
+// longest country name 
+
+function long(){
+    let country = ["india","america","northamerica"];
+    let s=0;
+    for(let i =0; i<country.length-1; i++){
+        if(country[i].length> country[i+1].length){
+            s=i;
+        }else{
+            s=i+1;
+        }
+    }
+
+    console.log(country[s]);
+}
+
+long();
+
+console.log(".................................................................");
+function vowel() {
+    let n = 0;
+    let str = "raj";
+    
+    for (let i = 0; i < str.length; i++) {
+        if (str.charAt(i) == "a" || str.charAt(i) == "e" || str.charAt(i) == "i" || str.charAt(i) == "o" || str.charAt(i) == "u") {
+            n++;
+        }
+    }
+
+    console.log("Number of vowels: " + n);
+    // Alternatively, you can return the count if needed:
+    // return n;
+}
+
+// Call the function to test it
+vowel();
+
+
+
