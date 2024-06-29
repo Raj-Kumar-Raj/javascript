@@ -1,0 +1,19 @@
+// sum of n natural number
+function sum(){ 
+let num = prompt("enter the number");
+let res = (num*(num+1))/2;
+console.log(res);
+}
+//concate
+function concat(){
+    let arr = ["raj", "kumar", "raj"];
+    let str=""
+    for(let i =0; i< arr.length; i++){
+        str+=arr[i];
+    }
+
+    console.log(str);
+}
+
+sum();
+concat();
