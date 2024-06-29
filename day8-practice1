@@ -1,0 +1,30 @@
+// maximum element of the  array using reduce
+let arr=[2, 3, 4 ,5,6];
+let marks =arr.reduce((max,el)=>{
+if(max<el){
+    return el;
+}else{
+    return max;
+}
+});
+
+ console.log(marks);
+
+ // check if all the element of the array is multiple of 10 or not 
+
+ console.log("............................................................")
+ let arry=[30,40,50];
+ console.log(arry.every((el)=>(el%2==0)));
+
+ console.log("............................................................");
+ // write function that to find the min no in an array 
+ let mim =arr.reduce((smll,el)=>{
+    if(smll >el){
+        return el;
+    }
+    else{
+        return smll;
+    }
+ });
+
+ console.log(mim);
