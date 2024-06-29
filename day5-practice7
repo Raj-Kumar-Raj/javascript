@@ -1,0 +1,9 @@
+let person={
+    name : "raj",
+    age:22,
+    citty:"newwork"
+};
+
+person.citty="newyork";
+person.country="India";
+console.log(person);
