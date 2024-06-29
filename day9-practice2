@@ -1,0 +1,26 @@
+// create a new button 
+let input =document.createElement("input")
+let button = document.createElement("button");
+button.innerText="click me";
+document.querySelector("body").append(input);
+document.querySelector("body").append(button);
+
+//change the placeholder value of the input to "username" and change the id of button to "btn"
+button.setAttribute("id","btn");
+input.setAttribute("placeholder","username");
+
+// button styling 
+let b = document.querySelector("button");
+b.classList.add("button");
+
+// h1 ="dom practice" underline ,purple
+let h1 = document.createElement("h1");
+h1.innerText="DOM PRACTICE";
+h1.classList.add("purple");
+document.querySelector("body").append(h1);
+
+// p tag on the page and set its text to "DELTA PRACTICE" , bold 
+let p = document.createElement("p");
+p.innerText="DELTA PRACTICE";
+p.classList.add("p");
+document.querySelector("body").append(p);
