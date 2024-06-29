@@ -1,0 +1,32 @@
+let bt = document.querySelector("button");
+let ul = document.querySelector("ul");
+let input = document.querySelector("input");
+bt.addEventListener("click", function(){
+    let item = document.createElement("Li");
+    item.innerText=input.value;
+
+    let delbtn = document.createElement("button");
+    delbtn.innerText="DELETE";
+    delbtn.classList.add("delete");
+
+    item.appendChild(delbtn);
+    ul.appendChild(item);
+    input.value="";
+});
+
+// let delbtns =document.querySelectorAll(".delete");
+//     for(delbtn of delbtns){
+//         delbtn.addEventListener("click",function(){
+//             let par = this.parentElement;
+//             par.remove();
+//         });
+//     }
+
+
+ul.addEventListener("click",function(event){
+    if(event.target.nodeName=="BUTTON"){
+        let listItem = event.target.parentElement;
+        listItem.remove();
+        console.log("deleted");
+    }
+})
