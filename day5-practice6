@@ -1,0 +1,9 @@
+// object of the car print its name 
+const car = {
+    name : "farari",
+    model:"old",
+    price:20000000000,
+    color:"blue"
+}
+
+console.log(car.name);
