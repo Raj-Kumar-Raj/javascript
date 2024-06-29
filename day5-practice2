@@ -1,0 +1,12 @@
+//array of object 
+const info={
+    aman:{
+        grade: "a",
+        marks: 99
+    },
+
+    raj:{
+        grade:"a",
+        marks:100
+    }
+}
